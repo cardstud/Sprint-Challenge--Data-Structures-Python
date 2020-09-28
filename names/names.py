@@ -50,6 +50,7 @@ class BinarySearchTree:
         else:
             return self.right.get_max()
 
+# time it
 import time
 
 start_time = time.time()

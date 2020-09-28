@@ -30,7 +30,6 @@ class LinkedList:
     def contains(self, value):
         if not self.head:
             return False
-        # get a reference to the node we're currently at; update this as we traverse the list
         current = self.head
         # check to see if we're at a valid node
         while current:
