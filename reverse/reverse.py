@@ -19,6 +19,7 @@ class LinkedList:
     def __init__(self):
         # reference to the head of the list
         self.head = None
+        self.tail = None
 
     def add_to_head(self, value):
         node = Node(value)
@@ -57,8 +58,8 @@ class LinkedList:
     # Utility function to print the linked LinkedList 
     def printList(self): 
         temp = self.head 
-        while(temp): 
-            print(temp.value), 
+        while(temp) != None: 
+            print(temp.value, "-->", end="") 
             temp = temp.next_node 
      
 # test the above 
